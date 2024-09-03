@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: 'GT-Walsheim';
-	src: url('./fonts/GT-Walsheim-Regular.woff') format('woff');
+	src: url('../fonts/GT-Walsheim-Regular.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'GT-Walsheim-Bd';
-	src: url('./fonts/GT-Walsheim-Bold.woff') format('woff');
+	src: url('../fonts/GT-Walsheim-Bold.woff') format('woff');
 }
 
 :root {

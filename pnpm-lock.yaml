@@ -210,7 +210,7 @@ packages:
     engines: {node: '>=16.13'}
 
   '@cooperco/cooper-component-library@file:../Cooper-Component-Library/cooperco-cooper-component-library-0.1.1.tgz':
-    resolution: {integrity: sha512-zceBGK8haoufD72xnY/K1EMwdYzru584cgN0grJSjtDZyiWSlXbDDVleRw2KzuKISrBnEeh7BZqC0XEaCIShmw==, tarball: file:../Cooper-Component-Library/cooperco-cooper-component-library-0.1.1.tgz}
+    resolution: {integrity: sha512-jQFJnxqXpx74Dx8pkuFtHEizGuLpadcMxzVimZC7pRJ5LtAD+vtYWSII5M3tubvSKebB6tak0M99If/D2/eHNg==, tarball: file:../Cooper-Component-Library/cooperco-cooper-component-library-0.1.1.tgz}
     version: 0.1.1
     peerDependencies:
       primevue: ^3.0.0
