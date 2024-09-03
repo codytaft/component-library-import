@@ -12,6 +12,7 @@
   "dependencies": {
     "@cooperco/cooper-component-library": "file:../Cooper-Component-Library/cooperco-cooper-component-library-0.1.1.tgz",
     "nuxt": "^3.13.0",
+    "primeicons": "^7.0.0",
     "vue": "latest"
   },
   "devDependencies": {

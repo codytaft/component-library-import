@@ -33,6 +33,6 @@ const modules = [
 
 <template>
 	<div>
-		<Accordion type="List" :modules="modules" class="text-orange-400" />
+		<Accordion type="List" :modules="modules" />
 	</div>
 </template>
