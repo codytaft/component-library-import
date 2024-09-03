@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'GT-Walsheim';
+	src: url('./fonts/GT-Walsheim-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'GT-Walsheim-Bd';
+	src: url('./fonts/GT-Walsheim-Bold.woff') format('woff');
+}
+
+:root {
+	font-family: 'GT-Walsheim';
+}
+
+.font-bold {
+	font-family: 'GT-Walsheim-Bd';
+}
+
+img {
+	height: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+div {
+	white-space: pre-wrap;
+}
+
+.carousel.hero {
+	/* 
+  This with the content override below puts the indicators
+  above the content, so that the content is full width. (no padding around it)
+*/
+	.p-carousel-prev,
+	.p-carousel-next {
+		z-index: 10;
+		position: relative;
+	}
+
+	.p-carousel-items-content {
+		width: 100%;
+		margin: 0 -48px;
+	}
+
+	/* Remove the space below the content */
+	.p-carousel-indicators {
+		position: relative;
+		margin-top: -32px;
+		z-index: 10;
+	}
+}
