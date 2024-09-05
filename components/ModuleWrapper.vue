@@ -1,9 +1,4 @@
-<script lang="ts">
-export interface ModuleWrapperProps {
-	typeName: string
-	id: string
-}
-</script>
+<script lang="ts"></script>
 
 <script setup lang="ts">
 // components and types
@@ -14,6 +9,10 @@ import {
 
 // queries
 import { accordionQuery } from '~/graphql/queries/getAccordion'
+export interface ModuleWrapperProps {
+	typeName: string
+	id: string
+}
 
 const props = defineProps<ModuleWrapperProps>()
 // Should match 1:1 with type PageContentModulesItem in contentfulTypes.ts
@@ -38,10 +37,26 @@ const fetchData = async () => {
 			moduleType = markRaw(Accordion)
 
 			const res = await queryById(accordionQuery, props.id)
-			console.log({ res })
-
-			moduleContent = res.value?.accordion
-
+			let responseValue = res.value?.accordion || {}
+			if (responseValue?.accordionItemCollection?.items) {
+				const items = responseValue.accordionItemCollection.items.map(
+					(item) => {
+						const { richText, highlightedColors } = parseRichTextField(
+							item?.bodyCopy
+						)
+						return {
+							...item,
+							bodyCopy: richText,
+							highlightedColors,
+						}
+					}
+				)
+				responseValue = { ...responseValue, accordionItemCollection: { items } }
+			}
+			moduleContent = {
+				type: responseValue.accordionType,
+				modules: responseValue.accordionItemCollection?.items,
+			}
 			break
 		}
 
@@ -57,11 +72,13 @@ const { moduleContent, moduleType } = await fetchData()
 
 <template>
 	<template v-if="renderModule">
-		<component
-			:is="moduleType"
-			v-bind="{
-				...moduleContent,
-			}"
-		/>
+		<div>
+			<component
+				:is="moduleType"
+				v-bind="{
+					...moduleContent,
+				}"
+			/>
+		</div>
 	</template>
 </template>

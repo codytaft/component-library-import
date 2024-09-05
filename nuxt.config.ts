@@ -17,6 +17,7 @@ export default defineNuxtConfig({
 	},
 
 	runtimeConfig: {
+		contentfulDeliveryToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
 		public: {
 			envType: process.env.ENV_TYPE,
 			// Contentful

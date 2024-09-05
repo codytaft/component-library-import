@@ -15,7 +15,6 @@ export const queryById = async function <T>(
 	)
 
 	if (error) {
-		// eslint-disable-next-line capitalized-comments
 		// log.error(`error querying id: ${moduleId}`);
 		// console.log(`error querying id: ${moduleId}`);
 	}

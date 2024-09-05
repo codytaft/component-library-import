@@ -7,7 +7,7 @@ export const accordionQuery = gql`
 			accordionItemCollection {
 				items {
 					headline
-					copy {
+					bodyCopy {
 						json
 						links {
 							entries {
@@ -19,9 +19,10 @@ export const accordionQuery = gql`
 							}
 						}
 					}
-					icon {
+					image: icon {
 						media {
 							fileName
+							src: url
 						}
 						altTag
 					}

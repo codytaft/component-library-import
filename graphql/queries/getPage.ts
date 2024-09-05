@@ -4,8 +4,13 @@ export const getPage = gql`
 	query PageQuery($slug: String!, $preview: Boolean = false) {
 		pageCollection(where: { slug: $slug }, limit: 1, preview: $preview) {
 			items {
-				sys {
-					id
+				pageModulesCollection {
+					items {
+						__typename
+						sys {
+							id
+						}
+					}
 				}
 			}
 		}
