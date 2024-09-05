@@ -1,17 +1,12 @@
 {
+	// https://nuxt.com/docs/guide/concepts/typescript
+	"extends": "./.nuxt/tsconfig.json",
 	"compilerOptions": {
-		"target": "ESNext",
 		"module": "ESNext",
-		"moduleResolution": "Node",
-		"strict": true,
-		"baseUrl": ".",
-		"paths": {
-			"#app": ["./.nuxt/types/app/index.d.ts"],
-			"#build": ["./.nuxt/types/build/index.d.ts"],
-			"#vue": ["./.nuxt/types/vue/index.d.ts"]
-		},
-		"types": ["@nuxt/typescript-build"]
-	},
-	"exclude": ["node_modules", ".nuxt", "dist"],
-	"extends": "./.nuxt/tsconfig.json"
+		"moduleResolution": "node",
+		"target": "ESNext",
+		"sourceMap": true,
+		"allowJs": true,
+		"strict": true
+	}
 }
