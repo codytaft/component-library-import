@@ -1,4 +1,25 @@
 :root {
+	--lily: white;
+	--iris: rgb(61, 15, 83);
+	--wisteria: rgb(137, 89, 227);
+	--hydrangea: rgb(204, 176, 250);
+	--lavender: rgb(168, 143, 237);
+	--petunia: rgb(189, 166, 224);
+	--lilac: rgb(120, 99, 166);
+	--rosemary: rgb(24, 165, 137);
+	--mint: rgb(66, 232, 191);
+	--gentian: rgb(107, 77, 224);
+	--sage: rgb(145, 217, 201);
+	--moss: rgb(191, 245, 229);
+	--periwinkle: rgb(178, 168, 255);
+	--soil: rgb(36, 31, 33);
+	--pebble: rgb(242, 242, 242);
+	--stone: rgb(69, 69, 69);
+	--verberna: rgb(136, 78, 153);
+	--aster: rgb(110, 59, 155);
+	--monstera: rgb(27, 79, 69);
+	--peony: rgb(217, 99, 124);
+	--lobelia: rgb(103, 131, 166);
 	--primary-50: #a88fed;
 	--primary-100: #9d82de;
 	--primary-200: #9375ce;
