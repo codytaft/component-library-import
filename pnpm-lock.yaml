@@ -18,8 +18,8 @@ importers:
         specifier: ^16.8.4
         version: 16.8.4
       '@cooperco/cooper-component-library':
-        specifier: 0.1.3
-        version: 0.1.3(vue@3.5.2(typescript@5.5.4))
+        specifier: 0.1.8
+        version: 0.1.8(vue@3.5.2(typescript@5.5.4))
       '@nuxt/eslint':
         specifier: ^0.5.6
         version: 0.5.6(eslint@9.9.1(jiti@1.21.6))(magicast@0.3.5)(rollup@4.21.2)(typescript@5.5.4)(vite@5.4.3(@types/node@22.5.4)(terser@5.31.6))(webpack-sources@3.2.3)
@@ -473,8 +473,8 @@ packages:
     resolution: {integrity: sha512-EZ9438DQS+bU8N39qjT1c3TqadP3F71tXJeMKOqYzQetvpP5U9iHEF1jl5RB+0fWfvI6xHiHsiUOWCqC9bR39A==}
     engines: {node: '>=6.0.0'}
 
-  '@cooperco/cooper-component-library@0.1.3':
-    resolution: {integrity: sha512-s1iU5tkHoS/Y1Mw8PUWalcKhw0U9ahRXpY9Y7MF4j4ED3iRWfkDMB9exfTz9MfG1TZfEIoeqy4CMxPo7OYcqww==}
+  '@cooperco/cooper-component-library@0.1.8':
+    resolution: {integrity: sha512-MvdB2cRmbuUAc3wQDxeOiiTzDgc1MqoLx0WoqqKoWmrI+2xCQoRWL8cz2jK+Y031pB3gAsSmvHqenPUkNO9lcg==}
     peerDependencies:
       vue: ^3.0.0
 
@@ -6766,7 +6766,7 @@ snapshots:
 
   '@contentful/rich-text-types@16.8.4': {}
 
-  '@cooperco/cooper-component-library@0.1.3(vue@3.5.2(typescript@5.5.4))':
+  '@cooperco/cooper-component-library@0.1.8(vue@3.5.2(typescript@5.5.4))':
     dependencies:
       '@primevue/themes': 4.0.5
       graphql: 16.9.0
